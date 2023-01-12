@@ -114,7 +114,7 @@ def list_merge_1(action=None, success=None, container=None, results=None, handle
 def format_2(action=None, success=None, container=None, results=None, handle=None, filtered_artifacts=None, filtered_results=None, custom_function=None, **kwargs):
     phantom.debug("format_2() called")
 
-    template = """peer {0} with priority {1} communicated {2} times\n"""
+    template = """%%\npeer {0} with priority {1} communicated {2} times\n%%"""
 
     # parameter list for template variable replacement
     parameters = [
